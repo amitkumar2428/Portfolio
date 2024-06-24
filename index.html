@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <div class="iconName">My Portfolio</div>
+                <div class="logo"><a href="developer.png" target="_blank"><img src="developer.png" alt="laptop image"></a>
+                </div>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="firstSection">
+        <div class="leftSection">Hi, My name is <span class="purple">Amit</span>
+            <div>and i am a </div>
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
+        </div>
+        <div class="middleSection">
+            <a href="https://www.linkedin.com/in/amit-kumar-yadav-476a57211/" target="_blank"
+                alt="LinkedIn profile link">
+                <button class="btn">LinkedIn Profile</button>
+            </a>
+            <div class="checkout">
+                <h2>Check out my projects below</h2>
+            </div>
+
+        </div>
+        <div class="rightSection">
+            <img src="developer.png" alt="Developer image">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <div id=project1>
+                <h2>Project 1:- Responsive Education Website using HTML5, CSS3 and JavaScript
+                    <a href="https://github.com/amitkumar2428/LetsEducate" target="_blank"
+                        title="https://github.com/amitkumar2428/LetsEducate" style="text-decoration: none;">
+                        <button class="butt">GitHub Link</button>
+                    </a>
+                </h2>
+
+            </div>
+            <div id="project2">
+                <h2>Project 2:- iCoder responsive website using Bootstrap
+                    <a href="https://github.com/amitkumar2428/iCoder-Bootstrap" target="_blank"
+                        title="https://github.com/amitkumar2428/iCoder-Bootstrap" style="text-decoration: none;">
+                        <button class="butt">GitHub Link</button>
+                    </a>
+                </h2>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <div id="emailError" class="error"></div>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone">
+            <div id="phoneError" class="error"></div>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Optional"></textarea>
+
+            <button onclick="Submit()" id="button">Submit</button>
+            <div id="ThankYou"></div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>My Developer Fortpolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.amitportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

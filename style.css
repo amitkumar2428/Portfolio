@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 33);
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    background-color: rgb(18, 18, 62);
+    display: inline;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 255, 0.169);
+
+}
+
+nav .icon {
+    margin: 15px 400px 0 20px;
+}
+
+nav .logo img {
+    margin-right: 10px;
+    width: 50px;
+    height: 40px;
+    display: inline;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links li a:hover {
+    font-size: 15px;
+    color: orange;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px;
+}
+
+.purple {
+    color: purple;
+}
+
+.leftSection {
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+#profile {
+    display: block;
+    margin: 0 17px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.227);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#profile:hover {
+    font-size: 10px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+}
+
+.firstSection>div {
+    width: 25%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.middleSection {
+    width: 50%;
+}
+
+.middleSection .btn {
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.middleSection .checkout h2 {
+    color: white;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    color: purple;
+}
+
+
+
+.projects {
+    padding: 4rem 1rem;
+    /*background: #f4f4f4;*/
+    background-color: rgb(0, 0, 40);
+    justify-content: center;
+    display: grid;
+
+}
+
+.projects h2 {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    color: white;
+}
+
+.projects .project-card {
+    color: white;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    font-size: 12px;
+
+}
+
+.project-card #project2 {
+    margin-right: 203px;
+}
+
+.project-card .butt {
+    display: block;
+    margin: 0 17px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.227);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.projects .butt:hover {
+    font-size: 10px;
+}
+
+.contact {
+    padding: 4rem 1rem;
+    color: white;
+
+}
+
+.contact h2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.227)
+}
+
+footer {
+    background-color: #0e0e1a;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.error {
+    color: red;
+    visibility: visible;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+#ThankYou {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links .active {
+        display: flex;
+    }
+
+    
+    
+
+    .hero {
+        height: 60vh;
+    }
+
+    footer>div {
+        width: 300px;
+    }
+
+    .footer {
+        display: inline-flex;
+        padding: 246x 222px;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+
+    .footer ul {
+        padding: 20px;
+    }
+
+    .footer .footer-first {
+        margin-top: 20px;
+    }
+
+    footer .footer-rights {
+        justify-content: center;
+        margin: auto;
+    }
+}
